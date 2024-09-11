@@ -14,7 +14,7 @@ export default function HeaderImages() {
     <section>
       <div className="hidden lg:block">
         <div className="flex items-center justify-center mt-10 flex-shrink-0 select-none">
-          <Link href="https://www.linkedin.com/in/ashish-job/" target="_blank">
+          <Link href="https://www.linkedin.com/in/seashoo/" target="_blank">
             <Image
               src={
                 isHoveredLinkedin ? "/clickedLinkedin.svg" : "/openLinkedin.svg"
@@ -27,7 +27,7 @@ export default function HeaderImages() {
               onMouseOut={() => setIsHoveredLinkedin(false)}
             />
           </Link>
-          <Link href="https://github.com/Ashishjob" target="_blank">
+          <Link href="https://github.com/seashoo" target="_blank">
             <Image
               src={isHoveredGithub ? "/clickedGithub.svg" : "/openGithub.svg"}
               width={75}
@@ -52,7 +52,7 @@ export default function HeaderImages() {
               onMouseOut={() => setIsHoveredResume(false)}
             />
           </Link>
-          <Link href="mailto:ashishjob104@gmail.com" target="_blank">
+          <Link href="mailto:ashoorsahran@gmail.com" target="_blank">
             <Image
               src={isHoveredMail ? "/clickedMail.svg" : "/openMail.svg"}
               width={75}
@@ -68,7 +68,7 @@ export default function HeaderImages() {
 
       <div className="hidden lg:hidden md:block">
         <div className="flex items-center justify-center mt-6 flex-shrink-0 select-none">
-          <Link href="https://www.linkedin.com/in/ashish-job/" target="_blank">
+          <Link href="https://www.linkedin.com/in/seashoo/" target="_blank">
             <Image
               src={
                 isHoveredLinkedin ? "/clickedLinkedin.svg" : "/openLinkedin.svg"
@@ -81,7 +81,7 @@ export default function HeaderImages() {
               onMouseOut={() => setIsHoveredLinkedin(false)}
             />
           </Link>
-          <Link href="https://github.com/Ashishjob" target="_blank">
+          <Link href="https://github.com/seashoo" target="_blank">
             <Image
               src={isHoveredGithub ? "/clickedGithub.svg" : "/openGithub.svg"}
               width={65}

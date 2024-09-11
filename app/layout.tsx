@@ -7,8 +7,8 @@ const myFont = localFont({ src: './fonts/RobotInvaders.ttf' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://portfolio-a73w.vercel.app/'),
-  title: 'Ashish Job Portfolio Website',
-  description: 'Ashish Job Portfolio Website',
+  title: 'Sahran Ashoor',
+  description: 'Sahran Ashoor Portfolio Website',
   openGraph: {
     images: [
       {

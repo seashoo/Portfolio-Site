@@ -82,8 +82,8 @@ export const projectData = [
       description:
         "A professionally crafted responsive website designed to showcase a diverse array of projects and professional experiences.",
       icons: ["nextjs", "typescript", "tailwindcss", "git", "figma"],
-      code: "https://github.com/Ashishjob/portfolio",
-      demo: "https://ashishjob.com",
+      code: "https://github.com/seashoo/Portfolio-Site",
+      demo: "https://seashoo.me",
       presentation: "",
       link: "http://localhost:3000/",
     },
