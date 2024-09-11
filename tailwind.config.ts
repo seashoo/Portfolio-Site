@@ -12,6 +12,7 @@ const config: Config = {
       'light-black': '#dcdcde',
       'red': '#049cd4',
       'black': '#dcdcde',
+      'black2': '#0a0a0a',
     },
     extend: {
       fontFamily: {
