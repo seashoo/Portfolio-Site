@@ -10,9 +10,8 @@ const config: Config = {
     colors: {
       'primary': '#E8E1D4',
       'light-black': '#333333',
-      'red': '#07c1f5',
+      'red': '#049cd4',
       'black': '#000000',
-      'blue': '#07c1f5'
     },
     extend: {
       fontFamily: {
