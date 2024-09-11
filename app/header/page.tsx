@@ -12,7 +12,7 @@ export default function Header() {
       <div className="bg-light-black w-2 mt-12"></div>
       <div className="mt-8 ml-4 mr-4 flex flex-col items-center">
         <span className="text-5xl tracking-wider">Sahran Ashoor</span>
-        <div className="bg-red-500 h-8 w-64 my-2"></div> <!-- Fixed width and margin for visibility -->
+        <div className="bg-red-500 h-8 w-64 my-2"></div> 
         <span className="text-xs text-center">
           Computer Engineering @ The University of Houston
         </span>
