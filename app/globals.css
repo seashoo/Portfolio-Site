@@ -33,7 +33,7 @@ body {
 
 ::selection {
   background: #E8E1D4;
-  color: #D66161;
+  color: #049cd4;
 }
 
 ::-webkit-scrollbar {
@@ -45,12 +45,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D66161;
+  background: #049cd4;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(133, 54, 54);
+  background: #049cd4;
 }
 
 .fade-enter {
@@ -88,11 +88,11 @@ body {
 }
 
 .carousel .control-dots .dot {
-  background: #D66161 !important; 
+  background: #049cd4 !important; 
 }
 
 .carousel .thumbs-wrapper .thumb {
-  border: 2px solid #D66161 !important; 
+  border: 2px solid #049cd4 !important; 
 }
 
 .carousel .carousel-status {
