@@ -26,7 +26,7 @@ export default function Home() {
       >
         <div className="absolute w-full h-full flex items-center justify-center">
           <div className="flex items-center justify-center h-screen text-xl md:text-4xl">
-            <Image
+            {/* <Image
               src="/panda.gif"
               width={200}
               height={200}
@@ -39,12 +39,12 @@ export default function Home() {
               height={100}
               alt=""
               className="select-none md:hidden ml-6"
-            />
+            /> */}
             <div className="mr-6">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Welcome to my portfolio!")
+                  .typeString("Loading Portfolio...")
                   .callFunction(() => {
                     setIsWelcomeMessageVisible(false);
                   })
