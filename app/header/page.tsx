@@ -10,10 +10,10 @@ export default function Header() {
     <section>
     <div className="flex flex-row justify-center text-light-black">
       <div className="bg-light-black w-2 mt-12"></div>
-      <div className="mt-8 ml-4 mr-4 w-fit whitespace-nowrap flex flex-col items-center">
-        <span className="text-5xl tracking-wider lg:text-9xl md:text-7xl lg:tracking-wide">Sahran Ashoor</span>
-        <div className="bg-red-500 h-8 w-full md:mb-2"></div> 
-        <span className="text-xs lg:text-3xl md:text-lg tracking-wider text-center">
+      <div className="mt-8 ml-4 mr-4 flex flex-col items-center">
+        <span className="text-5xl tracking-wider">Sahran Ashoor</span>
+        <div className="bg-red-500 h-8 w-64 my-2"></div> <!-- Fixed width and margin for visibility -->
+        <span className="text-xs text-center">
           Computer Engineering @ The University of Houston
         </span>
       </div>
