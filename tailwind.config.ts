@@ -8,10 +8,10 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'primary': '#E8E1D4',
-      'light-black': '#333333',
+      'primary': '#252526',
+      'light-black': '#dcdcde',
       'red': '#049cd4',
-      'black': '#000000',
+      'black': '#dcdcde',
     },
     extend: {
       fontFamily: {
