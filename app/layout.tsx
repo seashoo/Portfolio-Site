@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: '/metadata.png',
+        url: '/bluefirepng.png',
       },
     ],
   }
