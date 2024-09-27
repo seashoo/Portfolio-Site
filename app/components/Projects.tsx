@@ -12,7 +12,7 @@ export const projectData = [
   },
   {
     image: "/gitstudy.svg",
-    title: "GitStudy",
+    title: "LiDAR-CV",
     description:
       "GitStudy is a study group platform that we built for hackMISSO 2024 with Next.js. It allows users to create and join study groups, share resources, and collaborate on projects.",
     icons: ["nextjs", "typescript", "supabase", "shadcn", "tailwindcss", "git", "figma"],
@@ -23,7 +23,7 @@ export const projectData = [
   },
   {
     image: "/templit.svg",
-    title: "Templit",
+    title: "Decipher.AI",
     description:
       "Create professional product mockups effortlessly with our customizable tool, perfect for e-commerce sites, offering a quick and user-friendly experience. If you need inspiration, explore our curated sets of mockups.",
     icons: ["javascript", "reactjs", "tailwindcss", "git", "figma"],
@@ -34,7 +34,7 @@ export const projectData = [
   },
   {
     image: "/stellarscholars.svg",
-    title: "Stellar Scholars",
+    title: "Portfolio Website",
     description:
       "This is a short educational game utilizing cloudflare pages and OpenAI's GPT API to educate young minds on the important Concepts of the Galaxy and Gravity.",
     icons: ["reactjs", "pixijs", "javascript", "openai", "tailwindcss", "git", "figma"],
