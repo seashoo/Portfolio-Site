@@ -1,6 +1,6 @@
 export const projectData = [
   {
-    
+    image: "/bakermuseum.svg",
     title: "SortSite",
     description:
       "This initiative was undertaken as part of the Database Systems course (COSC 3380) at the University of Houston. Our aim was to design and implement a sophisticated database system tailored for an art museum environment.",
