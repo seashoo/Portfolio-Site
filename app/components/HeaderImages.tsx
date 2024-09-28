@@ -106,7 +106,7 @@ export default function HeaderImages() {
               onMouseOut={() => setIsHoveredResume(false)}
             />
           </Link>
-          <Link href="mailto:your-ashishjob104@gmail.com" target="_blank">
+          <Link href="mailto:ashoorsahran@gmail.com" target="_blank">
             <Image
               src={isHoveredMail ? "/clickedMail.svg" : "/openMail.svg"}
               width={65}
@@ -160,7 +160,7 @@ export default function HeaderImages() {
               onMouseOut={() => setIsHoveredResume(false)}
             />
           </Link>
-          <Link href="mailto:your-ashishjob104@gmail.com" target="_blank">
+          <Link href="mailto:ashoorsahran@gmail.com" target="_blank">
             <Image
               src={isHoveredMail ? "/clickedMail.svg" : "/openMail.svg"}
               width={50}
