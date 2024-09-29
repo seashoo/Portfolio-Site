@@ -3,7 +3,7 @@ export const projectData = [
     image: "",
     title: "SortSite",
     description:
-      "This initiative was undertaken as part of the Database Systems course (COSC 3380) at the University of Houston. Our aim was to design and implement a sophisticated database system tailored for an art museum environment.",
+      "An interactive web app built to visualize several variations of sorting, graphing, and maze generation algorithms.",
     icons: ["reactjs", "javascript", "node", "css3", "react-router", "git", "github-pages"],
     code: "https://github.com/seashoo/SortSite",
     demo: "https://seashoo.github.io/SortSite/#/",
@@ -16,10 +16,10 @@ export const projectData = [
     description:
       "GitStudy is a study group platform that we built for hackMISSO 2024 with Next.js. It allows users to create and join study groups, share resources, and collaborate on projects.",
     icons: ["nextjs", "typescript", "supabase", "shadcn", "css3", "git", "figma"],
-    code: "https://github.com/Brodypen/GitStudy",
-    demo: "https://git-study-self.vercel.app/",
-    presentation: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcHS42y8ooT8eriJFxXPJQL%2FGitStudy---HackMISSO%3Ftype%3Ddesign%26node-id%3D20-179%26t%3DVLp4eX3kwuNkFgHm-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D20%253A179%26mode%3Ddesign",
-    link: "https://git-study-self.vercel.app/",
+    code: "https://github.com/seashoo/LiDAR-CV",
+    demo: "",
+    presentation: "",
+    link: "",
   },
   {
     image: "/templit.svg",
