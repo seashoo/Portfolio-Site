@@ -86,7 +86,7 @@ export default function Carousel(): JSX.Element {
                     <iframe
                       title="Project Frame"
                       src={project.link}
-                      className="w-[1,000px] h-[600px] bg-[#ffffff]" // Shortened width and height for the iframe
+                      className="w-[5000px] h-[600px] bg-[#ffffff]" // Shortened width and height for the iframe
                     />
                   ) : (
                     <div className="w-full h-[300px] flex items-center justify-center">
