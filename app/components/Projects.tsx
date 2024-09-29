@@ -11,7 +11,7 @@ export const projectData = [
     link: "https://seashoo.github.io/SortSite/#/",
   },
   {
-    image: "/lidarcollage.svg",
+    image: "lidarcollage.svg",
     title: "LiDAR-CV",
     description:
       "This project uses a Benewake TFMini Plus LiDAR module mounted to scan 225 degrees on a vertical axis. A hall effect angle encoder reports the angular position of the scan rotor.",
