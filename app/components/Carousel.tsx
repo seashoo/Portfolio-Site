@@ -82,17 +82,19 @@ export default function Carousel(): JSX.Element {
                       className="w-[1030px] h-[550px] bg-[#ffffff]"
                     />
                   </div>
-                ) : (
+                ) : project.image ? ( // If no link, but image exists
                   <div className="sm:block lg:hidden">
                     <Image
                       className="select-none rounded-3xl"
                       src={project.image}
-                      alt="Project Image"
+                      alt={project.title}
                       width={1030}
                       height={550}
                       layout="responsive"
                     />
                   </div>
+                ) : (
+                  <div>No media available for this project</div> // Fallback if no image or link
                 )}
 
                 <button
