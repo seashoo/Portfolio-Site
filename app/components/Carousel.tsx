@@ -65,10 +65,9 @@ export default function Carousel(): JSX.Element {
         >
           {index === current && (
             <div className="flex flex-col items-center h-full">
-              <div className="flex items-center w-full justify-between px-4"> {/* Added justify-between and padding */}
-                {/* Left Arrow Button */}
+              <div className="flex items-center m-4 p-2 mx-2">
                 <button
-                  className="hover:text-red text-xl md:text-4xl"
+                  className="justify-start hover:text-red text-xl md:text-4xl mr-4 md:mr-8"
                   onClick={prevSlide}
                 >
                   &larr;
@@ -76,34 +75,31 @@ export default function Carousel(): JSX.Element {
                 <div className="flex flex-col items-center w-full">
                   {project.image ? (
                     <Image
-                      className="select-none rounded-3xl object-cover"
+                      className="select-none rounded-3xl object-contain"
                       src={project.image}
                       alt={project.title}
-                      width={500} 
-                      height={500} 
-                      layout="intrinsic"
+                      width={1030}
+                      height={550}
+                      layout="responsive"
                     />
                   ) : project.link ? (
-                    <iframe
-                      title="Project Frame"
-                      src={project.link}
-                      className="w-[1200px] h-[600px] bg-[#ffffff]"
-                    />
-                  ) : (
-                    <div className="w-full h-[300px] flex items-center justify-center">
-                      <p>No image or link available.</p>
+                    <div className="w-full h-[550px] bg-[#ffffff]">
+                      <iframe
+                        title="Project Frame"
+                        src={project.link}
+                        className="w-full h-full"
+                      />
                     </div>
-                  )}
+                  ) : null}
                 </div>
-                {/* Right Arrow Button */}
                 <button
-                  className="hover:text-red text-xl md:text-4xl"
+                  className="justify-end hover:text-red text-xl md:text-4xl ml-4 md:ml-8"
                   onClick={nextSlide}
                 >
                   &rarr;
                 </button>
               </div>
-              <div className="flex flex-col items-center justify-center w-full mt-4">
+              <div className="flex flex-col items-center justify-center w-full">
                 <h2 className="text-xl md:text-3xl underline text-left w-2/3">
                   {project.title}
                 </h2>
