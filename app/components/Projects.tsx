@@ -38,8 +38,8 @@ export const projectData = [
     description:
       "You're here right now! My portfolio, built on Next.js, is the central hub to see all of my work.",
     icons: ["reactjs", "nextjs", "javascript", "node", "css3", "git", "vercel"],
-    code: "https://github.com/brohudev/stellar-scholar",
-    demo: "http://stellarscholars.tech/",
+    code: "https://github.com/seashoo/Portfolio-Site",
+    demo: "https://portfolio-site-seashoos-projects.vercel.app/",
     presentation: "",
     link: "https://portfolio-site-seashoos-projects.vercel.app/",
   },
