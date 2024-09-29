@@ -83,20 +83,24 @@ export default function Carousel(): JSX.Element {
                       layout="responsive"
                     />
                   ) : (
-                    // Removed the error message for no image
-                    <div className="w-full h-[550px] bg-gray-200 flex items-center justify-center">
-                      {/* Optional placeholder for no image */}
-                      <span>No image available</span>
-                    </div>
+                    // Only display placeholder if no image and no link
+                    !project.link && (
+                      <div className="w-full h-[550px] bg-gray-200 flex items-center justify-center">
+                        {/* Optional placeholder for no image */}
+                        <span>No image available</span>
+                      </div>
+                    )
                   )}
                 </div>
-                <div className="hidden lg:block">
-                  <iframe
-                    title="Project Frame"
-                    src={project.link}
-                    className="w-[1030px] h-[550px] bg-[#ffffff]"
-                  />
-                </div>
+                {project.link && (
+                  <div className="hidden lg:block">
+                    <iframe
+                      title="Project Frame"
+                      src={project.link}
+                      className="w-[1030px] h-[550px] bg-[#ffffff]"
+                    />
+                  </div>
+                )}
                 <button
                   className="justify-end hover:text-red text-xl md:text-4xl ml-4 md:ml-8"
                   onClick={nextSlide}
