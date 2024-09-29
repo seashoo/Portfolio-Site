@@ -66,8 +66,9 @@ export default function Carousel(): JSX.Element {
           {index === current && (
             <div className="flex flex-col items-center h-full">
               <div className="flex items-center m-4 p-2 mx-2 w-full">
+                {/* Left Arrow Button */}
                 <button
-                  className="justify-start hover:text-red text-xl md:text-4xl mr-2" 
+                  className="hover:text-red text-xl md:text-4xl mx-2" // Changed margin
                   onClick={prevSlide}
                 >
                   &larr;
@@ -75,7 +76,7 @@ export default function Carousel(): JSX.Element {
                 <div className="flex flex-col items-center w-full">
                   {project.image ? (
                     <Image
-                      className="select-none rounded-3xl object-cover" 
+                      className="select-none rounded-3xl object-cover"
                       src={project.image}
                       alt={project.title}
                       width={500} 
@@ -86,7 +87,7 @@ export default function Carousel(): JSX.Element {
                     <iframe
                       title="Project Frame"
                       src={project.link}
-                      className="w-[1100px] h-[600px] bg-[#ffffff]" 
+                      className="w-[1100px] h-[600px] bg-[#ffffff]"
                     />
                   ) : (
                     <div className="w-full h-[300px] flex items-center justify-center">
@@ -94,8 +95,9 @@ export default function Carousel(): JSX.Element {
                     </div>
                   )}
                 </div>
+                {/* Right Arrow Button */}
                 <button
-                  className="justify-end hover:text-red text-xl md:text-4xl ml-2" 
+                  className="hover:text-red text-xl md:text-4xl mx-2" // Changed margin
                   onClick={nextSlide}
                 >
                   &rarr;
