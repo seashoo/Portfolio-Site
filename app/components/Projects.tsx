@@ -19,7 +19,7 @@ export const projectData = [
     code: "https://github.com/seashoo/LiDAR-CV",
     demo: "",
     presentation: "",
-    link: "https://github.com/seashoo/LiDAR-CV",
+    link: "https://sites.google.com/view/lidar-cv/home",
   },
   {
     image: "/templit.svg",
