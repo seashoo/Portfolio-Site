@@ -14,12 +14,12 @@ export const projectData = [
     image: "/gitstudy.svg",
     title: "LiDAR-CV",
     description:
-      "GitStudy is a study group platform that we built for hackMISSO 2024 with Next.js. It allows users to create and join study groups, share resources, and collaborate on projects.",
+      "This project uses a Benewake TFMini Plus LiDAR module mounted to scan 225 degrees on a vertical axis. A hall effect angle encoder reports the angular position of the scan rotor.",
     icons: ["nextjs", "typescript", "supabase", "shadcn", "css3", "git", "figma"],
     code: "https://github.com/seashoo/LiDAR-CV",
     demo: "",
     presentation: "",
-    link: "",
+    link: "https://github.com/seashoo/LiDAR-CV",
   },
   {
     image: "/templit.svg",
