@@ -37,7 +37,7 @@ export const projectData = [
     title: "Portfolio Website",
     description:
       "You're here right now! My portfolio, built on Next.js, is the central hub to see all of my work.",
-    icons: ["reactjs", "pixijs", "javascript", "openai", "css3", "git", "figma"],
+    icons: ["reactjs", "nextjs", "javascript", "node", "css3", "git", "vercel"],
     code: "https://github.com/brohudev/stellar-scholar",
     demo: "http://stellarscholars.tech/",
     presentation: "",
