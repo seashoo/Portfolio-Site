@@ -78,8 +78,8 @@ export default function Carousel(): JSX.Element {
                       className="select-none rounded-3xl object-contain"
                       src={project.image}
                       alt={project.title}
-                      width={300} // Set to your desired smaller width
-                      height={250} // Set to your desired smaller height
+                      width={500} // Set to your desired smaller width
+                      height={450} // Set to your desired smaller height
                       layout="responsive"
                     />
                   ) : project.link ? (
