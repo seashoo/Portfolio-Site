@@ -72,26 +72,23 @@ export default function Carousel(): JSX.Element {
                 >
                   &larr;
                 </button>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center w-full">
                   {project.image ? (
                     <Image
-                      className="select-none rounded-3xl"
+                      className="select-none rounded-3xl object-contain"
                       src={project.image} // Display the project image
                       alt={project.title}
                       width={1030}
                       height={550}
                       layout="responsive"
                     />
-                  ) : (
-                    <div>No image available</div> // Placeholder if no image
-                  )}
-                </div>
-                <div className="hidden lg:block">
-                  <iframe
-                    title="Project Frame"
-                    src={project.link}
-                    className="w-[1030px] h-[550px] bg-[#ffffff]"
-                  />
+                  ) : project.link ? (
+                    <iframe
+                      title="Project Frame"
+                      src={project.link}
+                      className="w-full h-[550px] bg-[#ffffff]"
+                    />
+                  ) : null}
                 </div>
                 <button
                   className="justify-end hover:text-red text-xl md:text-4xl ml-4 md:ml-8"
