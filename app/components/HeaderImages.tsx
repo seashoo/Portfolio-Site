@@ -122,7 +122,7 @@ export default function HeaderImages() {
 
       <div className="md:hidden">
         <div className="flex items-center justify-center mt-4 flex-shrink-0 select-none">
-          <Link href="https://www.linkedin.com/in/ashish-job/" target="_blank">
+          <Link href="https://www.linkedin.com/in/ashoorsahran/" target="_blank">
             <Image
               src={
                 isHoveredLinkedin ? "/clickedLinkedin.svg" : "/openLinkedin.svg"
@@ -135,7 +135,7 @@ export default function HeaderImages() {
               onMouseOut={() => setIsHoveredLinkedin(false)}
             />
           </Link>
-          <Link href="https://github.com/Ashishjob" target="_blank">
+          <Link href="https://github.com/seashoo" target="_blank">
             <Image
               src={isHoveredGithub ? "/clickedGithub.svg" : "/openGithub.svg"}
               width={50}
