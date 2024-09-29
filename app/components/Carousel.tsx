@@ -79,15 +79,15 @@ export default function Carousel(): JSX.Element {
                       className="select-none rounded-3xl object-cover"
                       src={project.image}
                       alt={project.title}
-                      width={500} // Adjust this value as needed
-                      height={500} // Adjust this value as needed
+                      width={500} 
+                      height={500} 
                       layout="intrinsic"
                     />
                   ) : project.link ? (
                     <iframe
                       title="Project Frame"
                       src={project.link}
-                      className="w-[1100px] h-[600px] bg-[#ffffff]"
+                      className="w-[1200px] h-[600px] bg-[#ffffff]"
                     />
                   ) : (
                     <div className="w-full h-[300px] flex items-center justify-center">
