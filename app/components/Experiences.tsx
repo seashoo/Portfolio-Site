@@ -12,7 +12,7 @@ export const experiences = [
         description: "As an intern at AWS, I developed and published DynamoDB DAX Cluster controls for the Controls Tower platform, ensuring secure data encryption using AWS Guard and CloudFormation. I also created a Python-based command-line interface toolset that automated client-host interactions, collaborating closely with security research engineers to deploy effective security controls."
     },
     {
-        position: "Travel Intern & Technical Lead - Engineers Without Borders UH",
+        position: "Travel Intern & Technology Lead - Engineers Without Borders UH",
         time: "[ Sept 2023 - June 2024 ]",
         url: "https://www.ewb-usa.org/",
         description: "I traveled to Valle Valerio, Nicaragua, as part of a 7-person team to redesign and automate a community water pump system. My contribution ensured circuit safety and reliability while I was also leading a team to update the EWB-UH website with a new Django back-end and MySQL database."
