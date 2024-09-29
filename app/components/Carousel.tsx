@@ -78,18 +78,18 @@ export default function Carousel(): JSX.Element {
                       className="select-none rounded-3xl object-contain"
                       src={project.image}
                       alt={project.title}
-                      width={50} // Set to your desired width
-                      height={100} // Set to your desired height
+                      width={200} // Set to your desired smaller width
+                      height={150} // Set to your desired smaller height
                       layout="responsive"
                     />
                   ) : project.link ? (
                     <iframe
                       title="Project Frame"
                       src={project.link}
-                      className="w-full h-[550px] bg-[#ffffff]"
+                      className="w-[400px] h-[300px] bg-[#ffffff]" // Shortened width and height for the iframe
                     />
                   ) : (
-                    <div className="w-full h-[550px] flex items-center justify-center">
+                    <div className="w-full h-[300px] flex items-center justify-center">
                       <p>No image or link available.</p>
                     </div>
                   )}
