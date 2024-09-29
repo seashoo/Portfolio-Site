@@ -22,15 +22,15 @@ export const projectData = [
     link: "",
   },
   {
-    image: "/templit.svg",
+    image: "/decipherdemo.gif",
     title: "Decipher.AI",
     description:
       "Create professional product mockups effortlessly with our customizable tool, perfect for e-commerce sites, offering a quick and user-friendly experience. If you need inspiration, explore our curated sets of mockups.",
     icons: ["javascript", "reactjs", "css3", "git", "figma"],
-    code: "",
-    demo: "https://templit.net/",
+    code: "https://github.com/seashoo/Decipher.AI",
+    demo: "",
     presentation: "",
-    link: "https://templit.net/",
+    link: "",
   },
   {
     image: "/stellarscholars.svg",
