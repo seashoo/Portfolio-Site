@@ -72,23 +72,29 @@ export default function Carousel(): JSX.Element {
                 >
                   &larr;
                 </button>
-                <div className="sm:block lg:hidden">
-                  <Image
-                    className="select-none rounded-3xl"
-                    src={project.image}
-                    alt="Project Image"
-                    width={50}
-                    height={50}
-                    layout="responsive"
-                  />
-                </div>
-                <div className="hidden lg:block">
-                  <iframe
-                    title="Project Frame"
-                    src={project.link}
-                    className="w-[1030px] h-[550px] bg-[#ffffff]"
-                  />
-                </div>{" "}
+
+                {/* Conditionally display image or iframe */}
+                {project.link ? (
+                  <div className="hidden lg:block">
+                    <iframe
+                      title="Project Frame"
+                      src={project.link}
+                      className="w-[1030px] h-[550px] bg-[#ffffff]"
+                    />
+                  </div>
+                ) : (
+                  <div className="sm:block lg:hidden">
+                    <Image
+                      className="select-none rounded-3xl"
+                      src={project.image}
+                      alt="Project Image"
+                      width={1030}
+                      height={550}
+                      layout="responsive"
+                    />
+                  </div>
+                )}
+
                 <button
                   className="justify-end hover:text-red text-xl md:text-4xl ml-4 md:ml-8"
                   onClick={nextSlide}
@@ -96,6 +102,7 @@ export default function Carousel(): JSX.Element {
                   &rarr;
                 </button>
               </div>
+
               <div className="flex flex-col items-center justify-center w-full">
                 <h2 className="text-xl md:text-3xl underline text-left w-2/3">
                   {project.title}
