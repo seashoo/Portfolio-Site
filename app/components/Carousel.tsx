@@ -65,7 +65,7 @@ export default function Carousel(): JSX.Element {
         >
           {index === current && (
             <div className="flex flex-col items-center h-full">
-              <div className="flex items-center m-4 p-2 mx-2">
+              <div className="flex items-center m-4 p-2 mx-2 w-full">
                 <button
                   className="justify-start hover:text-red text-xl md:text-4xl mr-4 md:mr-8"
                   onClick={prevSlide}
@@ -78,19 +78,21 @@ export default function Carousel(): JSX.Element {
                       className="select-none rounded-3xl object-contain"
                       src={project.image}
                       alt={project.title}
-                      width={1030}
-                      height={550}
+                      width={1030} // Set to your desired width
+                      height={550} // Set to your desired height
                       layout="responsive"
                     />
                   ) : project.link ? (
-                    <div className="w-full h-[550px] bg-[#ffffff]">
-                      <iframe
-                        title="Project Frame"
-                        src={project.link}
-                        className="w-full h-full"
-                      />
+                    <iframe
+                      title="Project Frame"
+                      src={project.link}
+                      className="w-full h-[550px] bg-[#ffffff]"
+                    />
+                  ) : (
+                    <div className="w-full h-[550px] flex items-center justify-center">
+                      <p>No image or link available.</p>
                     </div>
-                  ) : null}
+                  )}
                 </div>
                 <button
                   className="justify-end hover:text-red text-xl md:text-4xl ml-4 md:ml-8"
