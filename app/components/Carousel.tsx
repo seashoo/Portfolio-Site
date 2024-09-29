@@ -75,18 +75,18 @@ export default function Carousel(): JSX.Element {
                 <div className="flex flex-col items-center w-full">
                   {project.image ? (
                     <Image
-                      className="select-none rounded-3xl object-contain"
+                      className="select-none rounded-3xl object-contain w-[150px] h-[100px]" // Set the size for images
                       src={project.image}
                       alt={project.title}
-                      width={50} // Set to your desired smaller width
-                      height={50} // Set to your desired smaller height
-                      layout="responsive"
+                      width={150} // Set to your desired smaller width
+                      height={100} // Set to your desired smaller height
+                      layout="fixed" // Changed layout to fixed for consistent sizing
                     />
                   ) : project.link ? (
                     <iframe
                       title="Project Frame"
                       src={project.link}
-                      className="w-[1000px] h-[600px] bg-[#ffffff]" // Shortened width and height for the iframe
+                      className="w-[1100px] h-[600px] bg-[#ffffff]" // Shortened width and height for the iframe
                     />
                   ) : (
                     <div className="w-full h-[300px] flex items-center justify-center">
