@@ -26,7 +26,7 @@ export const projectData = [
     title: "Decipher.AI",
     description:
       "Decipher.AI is an interactive drawing application that allows users to draw mathematical equations on a canvas. Once an equation is drawn, the application uses a multimodal LLM to calculate and display the result next to the equals sign.",
-    icons: ["javascript", "reactjs", "css3", "git", "figma"],
+    icons: ["python", "openai-api", "tkinter", "pillow-pil", "git"],
     code: "https://github.com/seashoo/Decipher.AI",
     demo: "",
     presentation: "",
