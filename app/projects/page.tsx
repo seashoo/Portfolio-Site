@@ -6,7 +6,7 @@ export default function Projects() {
       <div className="items-center justify-center flex flex-col">
         <span className="text-2xl md:text-4xl underline">Projects</span>
         <span className="text-base mt-2 animate-pulse">
-          Slide to see the projects
+          Interact with my work!
         </span>
       </div>
       <Carousel />
