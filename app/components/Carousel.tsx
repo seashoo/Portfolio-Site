@@ -67,7 +67,7 @@ export default function Carousel(): JSX.Element {
             <div className="flex flex-col items-center h-full">
               <div className="flex items-center m-4 p-2 mx-2 w-full">
                 <button
-                  className="justify-start hover:text-red text-xl md:text-4xl mr-4 md:mr-8"
+                  className="justify-start hover:text-red text-xl md:text-4xl mr-2" 
                   onClick={prevSlide}
                 >
                   &larr;
@@ -75,18 +75,18 @@ export default function Carousel(): JSX.Element {
                 <div className="flex flex-col items-center w-full">
                   {project.image ? (
                     <Image
-                      className="select-none rounded-3xl object-cover" // Set the size for images
+                      className="select-none rounded-3xl object-cover" 
                       src={project.image}
                       alt={project.title}
-                      width={500} // Set to your desired smaller width
-                      height={500} // Set to your desired smaller height
-                      layout="intrinsic" // Changed layout to fixed for consistent sizing
+                      width={500} 
+                      height={500} 
+                      layout="intrinsic" 
                     />
                   ) : project.link ? (
                     <iframe
                       title="Project Frame"
                       src={project.link}
-                      className="w-[1100px] h-[600px] bg-[#ffffff]" // Shortened width and height for the iframe
+                      className="w-[1100px] h-[600px] bg-[#ffffff]" 
                     />
                   ) : (
                     <div className="w-full h-[300px] flex items-center justify-center">
@@ -95,7 +95,7 @@ export default function Carousel(): JSX.Element {
                   )}
                 </div>
                 <button
-                  className="justify-end hover:text-red text-xl md:text-4xl ml-4 md:ml-8"
+                  className="justify-end hover:text-red text-xl md:text-4xl ml-2" 
                   onClick={nextSlide}
                 >
                   &rarr;
