@@ -14,7 +14,7 @@ export default function HeaderImages() {
     <section>
       <div className="hidden lg:block">
         <div className="flex items-center justify-center mt-10 flex-shrink-0 select-none">
-          <Link href="https://www.linkedin.com/in/seashoo/" target="_blank">
+          <Link href="https://www.linkedin.com/in/ashoorsahran/" target="_blank">
             <Image
               src={
                 isHoveredLinkedin ? "/clickedLinkedin.svg" : "/openLinkedin.svg"
@@ -68,7 +68,7 @@ export default function HeaderImages() {
 
       <div className="hidden lg:hidden md:block">
         <div className="flex items-center justify-center mt-6 flex-shrink-0 select-none">
-          <Link href="https://www.linkedin.com/in/seashoo/" target="_blank">
+          <Link href="https://www.linkedin.com/in/ashoorsahran/" target="_blank">
             <Image
               src={
                 isHoveredLinkedin ? "/clickedLinkedin.svg" : "/openLinkedin.svg"
