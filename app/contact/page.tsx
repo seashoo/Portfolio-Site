@@ -66,7 +66,7 @@ function Contact() {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="placeholder:text-light-black h-12 w-full rounded-lg pl-2 text-black2 shadow-inner"
+              className="placeholder:text-gray-500 h-12 w-full rounded-lg pl-2 text-black2 shadow-inner"
               placeholder="Enter Name"
             />
           </div>
@@ -76,7 +76,7 @@ function Contact() {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="placeholder:text-light-black h-12 w-full rounded-lg pl-2 text-black2 shadow-inner"
+              className="placeholder:text-gray-500 h-12 w-full rounded-lg pl-2 text-black2 shadow-inner"
               placeholder="Enter Email"
             />
           </div>
@@ -85,7 +85,7 @@ function Contact() {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="h-40 w-full resize-y rounded-lg bg-white pl-2 pt-2 text-black2 shadow-inner placeholder:text-light-black"
+              className="h-40 w-full resize-y rounded-lg bg-white pl-2 pt-2 text-black2 shadow-inner placeholder:text-gray-500"
               placeholder="Enter Your Message"
             />
           </div>
