@@ -80,7 +80,7 @@ export default function Carousel(): JSX.Element {
                       alt={project.title}
                       width={150} // Set to your desired smaller width
                       height={100} // Set to your desired smaller height
-                      layout="fixed" // Changed layout to fixed for consistent sizing
+                      layout="intrinsic" // Changed layout to fixed for consistent sizing
                     />
                   ) : project.link ? (
                     <iframe
