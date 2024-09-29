@@ -39,7 +39,7 @@ export default function HeaderImages() {
             />
           </Link>
           <Link
-            href="/Ashish_Job_Resume.pdf"
+            href="/seashoo_resume.pdf"
             target="_blank"
           >
             <Image
@@ -93,7 +93,7 @@ export default function HeaderImages() {
             />
           </Link>
           <Link
-            href="https://www.ashishjob.com/Ashish_Job_Resume.pdf"
+            href="https://www.seashoo.me/seashoo_resume.pdf"
             target="_blank"
           >
             <Image
@@ -147,7 +147,7 @@ export default function HeaderImages() {
             />
           </Link>
           <Link
-            href="https://www.ashishjob.com/Ashish_Job_Resume.pdf"
+            href="https://www.seashoo.me/seashoo_resume.pdf"
             target="_blank"
           >
             <Image
