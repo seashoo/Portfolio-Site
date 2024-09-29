@@ -59,51 +59,51 @@ export default function Carousel(): JSX.Element {
   return (
     <div className="" onMouseDown={startDrag} onMouseUp={endDrag}>
       {projectData.map((project, index) => (
-        <div
-          key={index}
-          className={index === current ? "slide active" : "slide"}
-        >
+        <div key={index} className={index === current ? "slide active" : "slide"}>
           {index === current && (
             <div className="flex flex-col items-center h-full">
-              <div className="flex items-center w-full justify-between px-4"> {/* Added justify-between and padding */}
-                {/* Left Arrow Button */}
-                <button
-                  className="hover:text-red text-xl md:text-4xl"
-                  onClick={prevSlide}
-                >
-                  &larr;
-                </button>
-                <div className="flex flex-col items-center w-full">
-                  {project.image ? (
-                    <Image
-                      className="select-none rounded-3xl object-cover"
-                      src={project.image}
-                      alt={project.title}
-                      width={500} // Adjust this value as needed
-                      height={500} // Adjust this value as needed
-                      layout="intrinsic"
-                    />
-                  ) : project.link ? (
-                    <iframe
-                      title="Project Frame"
-                      src={project.link}
-                      className="w-[1100px] h-[600px] bg-[#ffffff]"
-                    />
-                  ) : (
-                    <div className="w-full h-[300px] flex items-center justify-center">
-                      <p>No image or link available.</p>
-                    </div>
-                  )}
+              <div className="flex items-center m-4 p-2 w-full">
+                {/* Adjusted width of the image container */}
+                <div className="flex flex-grow justify-between items-center">
+                  <button
+                    className="hover:text-red text-xl md:text-4xl mx-2" // Added margin to buttons
+                    onClick={prevSlide}
+                  >
+                    &larr;
+                  </button>
+
+                  <div className="flex flex-col items-center">
+                    {project.image ? (
+                      <Image
+                        className="select-none rounded-3xl object-cover"
+                        src={project.image}
+                        alt={project.title}
+                        width={500} // Image width
+                        height={500} // Image height
+                        layout="intrinsic" 
+                      />
+                    ) : project.link ? (
+                      <iframe
+                        title="Project Frame"
+                        src={project.link}
+                        className="w-[600px] h-[400px] bg-[#ffffff]" // Adjusted iframe size
+                      />
+                    ) : (
+                      <div className="w-full h-[300px] flex items-center justify-center">
+                        <p>No image or link available.</p>
+                      </div>
+                    )}
+                  </div>
+
+                  <button
+                    className="hover:text-red text-xl md:text-4xl mx-2" // Added margin to buttons
+                    onClick={nextSlide}
+                  >
+                    &rarr;
+                  </button>
                 </div>
-                {/* Right Arrow Button */}
-                <button
-                  className="hover:text-red text-xl md:text-4xl"
-                  onClick={nextSlide}
-                >
-                  &rarr;
-                </button>
               </div>
-              <div className="flex flex-col items-center justify-center w-full mt-4">
+              <div className="flex flex-col items-center justify-center w-full">
                 <h2 className="text-xl md:text-3xl underline text-left w-2/3">
                   {project.title}
                 </h2>
