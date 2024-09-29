@@ -15,7 +15,7 @@ export const projectData = [
     title: "LiDAR-CV",
     description:
       "This project uses a Benewake TFMini Plus LiDAR module mounted to scan 225 degrees on a vertical axis. A hall effect angle encoder reports the angular position of the scan rotor.",
-    icons: ["nextjs", "typescript", "supabase", "shadcn", "css3", "git", "figma"],
+    icons: ["python", "opencv", "raspberry-pi", "arduino", "git"],
     code: "https://github.com/seashoo/LiDAR-CV",
     demo: "",
     presentation: "",
@@ -25,7 +25,7 @@ export const projectData = [
     image: "/decipherdemo.gif",
     title: "Decipher.AI",
     description:
-      "Create professional product mockups effortlessly with our customizable tool, perfect for e-commerce sites, offering a quick and user-friendly experience. If you need inspiration, explore our curated sets of mockups.",
+      "Decipher.AI is an interactive drawing application that allows users to draw mathematical equations on a canvas. Once an equation is drawn, the application uses a multimodal LLM to calculate and display the result next to the equals sign.",
     icons: ["javascript", "reactjs", "css3", "git", "figma"],
     code: "https://github.com/seashoo/Decipher.AI",
     demo: "",
@@ -36,7 +36,7 @@ export const projectData = [
     image: "",
     title: "Portfolio Website",
     description:
-      "This is a short educational game utilizing cloudflare pages and OpenAI's GPT API to educate young minds on the important Concepts of the Galaxy and Gravity.",
+      "You're here right now! My portfolio, built on Next.js, is the central hub to see all of my work.",
     icons: ["reactjs", "pixijs", "javascript", "openai", "css3", "git", "figma"],
     code: "https://github.com/brohudev/stellar-scholar",
     demo: "http://stellarscholars.tech/",
