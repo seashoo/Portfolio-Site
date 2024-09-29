@@ -76,18 +76,20 @@ export default function Carousel(): JSX.Element {
                   {project.image ? (
                     <Image
                       className="select-none rounded-3xl object-contain"
-                      src={project.image} // Display the project image
+                      src={project.image}
                       alt={project.title}
                       width={1030}
                       height={550}
                       layout="responsive"
                     />
                   ) : project.link ? (
-                    <iframe
-                      title="Project Frame"
-                      src={project.link}
-                      className="w-full h-[550px] bg-[#ffffff]"
-                    />
+                    <div className="w-full h-[550px] bg-[#ffffff]">
+                      <iframe
+                        title="Project Frame"
+                        src={project.link}
+                        className="w-full h-full"
+                      />
+                    </div>
                   ) : null}
                 </div>
                 <button
