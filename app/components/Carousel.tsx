@@ -75,22 +75,27 @@ export default function Carousel(): JSX.Element {
                 <div className="flex flex-col items-center w-full">
                   {project.image ? (
                     <Image
-                      className="select-none rounded-3xl object-contain"
+                      className="select-none rounded-3xl w-full h-auto"
                       src={project.image}
                       alt={project.title}
                       width={1030}
                       height={550}
                       layout="responsive"
                     />
-                  ) : project.link ? (
-                    <div className="w-full h-[550px] bg-[#ffffff]">
-                      <iframe
-                        title="Project Frame"
-                        src={project.link}
-                        className="w-full h-full"
-                      />
+                  ) : (
+                    // Removed the error message for no image
+                    <div className="w-full h-[550px] bg-gray-200 flex items-center justify-center">
+                      {/* Optional placeholder for no image */}
+                      <span>No image available</span>
                     </div>
-                  ) : null}
+                  )}
+                </div>
+                <div className="hidden lg:block">
+                  <iframe
+                    title="Project Frame"
+                    src={project.link}
+                    className="w-[1030px] h-[550px] bg-[#ffffff]"
+                  />
                 </div>
                 <button
                   className="justify-end hover:text-red text-xl md:text-4xl ml-4 md:ml-8"
