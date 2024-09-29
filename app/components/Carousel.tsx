@@ -75,7 +75,7 @@ export default function Carousel(): JSX.Element {
                 <div className="flex flex-col items-center w-full">
                   {project.image ? (
                     <Image
-                      className="select-none rounded-3xl object-contain w-[150px] h-[100px]" // Set the size for images
+                      className="select-none rounded-3xl object-contain w-[550px] h-[600px]" // Set the size for images
                       src={project.image}
                       alt={project.title}
                       width={150} // Set to your desired smaller width
