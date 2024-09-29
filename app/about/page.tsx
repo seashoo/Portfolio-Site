@@ -15,11 +15,11 @@ export default function About() {
         </span>
         <br></br><br></br>
             <span className="text-base md:text-xl ">
-            Hey! I&apos;m <span className="hover:text-red">Ashish Job</span>, studying <span className="hover:text-red">computer science</span> with a <span className="hover:text-red">minor in math</span> at the University of Houston. I&apos;m really into <span className="hover:text-red">AI</span> and <span className="hover:text-red">software engineering</span>, and outside of tech, I love pandas, volleyball, drawing, manga, and discovering new music.
+            Hey! I&apos;m <span className="hover:text-red">Sahran Ashoor</span>, a sophomore studying <span className="hover:text-red">computer engineering</span> at the University of Houston. I&apos;m interested in working in <span className="hover:text-red">AI</span> and <span className="hover:text-red">embedded software</span>, and outside of tech, I love photography, travel, and playing the electric guitar.
           </span>
           <br></br><br></br>
           <span className="text-base md:text-xl">
-          Feel free to connect with me on <span className="hover:text-red"><a href="https://www.linkedin.com/in/ashish-job/" target="_blank">LinkedIn</a></span>, check out my work on <span className="hover:text-red"><a href="https://github.com/Ashishjob" target="_blank">GitHub</a></span>, or shoot
+          Feel free to connect with me on <span className="hover:text-red"><a href="https://www.linkedin.com/in/ashoorsahran/" target="_blank">LinkedIn</a></span>, check out my work on <span className="hover:text-red"><a href="https://github.com/seashoo" target="_blank">GitHub</a></span>, or shoot
           me an <span className="hover:text-red"><a href="mailto:ashoorsahran@gmail.com" target="_blank">email</a></span>!
           </span>
         </div>
