@@ -40,9 +40,9 @@ export default function Carousel(): JSX.Element {
     const dragThreshold = 50;
 
     if (deltaX > dragThreshold) {
-      nextSlide();
-    } else if (deltaX < -dragThreshold) {
       prevSlide();
+    } else if (deltaX < -dragThreshold) {
+      nextSlide();
     }
 
     setDragEnd(newDragEnd);
@@ -65,38 +65,34 @@ export default function Carousel(): JSX.Element {
         >
           {index === current && (
             <div className="flex flex-col items-center h-full">
-              <div className="flex items-center m-4 p-2  mx-2">
+              <div className="flex items-center m-4 p-2 mx-2">
                 <button
                   className="justify-start hover:text-red text-xl md:text-4xl mr-4 md:mr-8"
                   onClick={prevSlide}
                 >
                   &larr;
                 </button>
-
-                {/* Conditionally display image or iframe */}
-                {project.link ? (
-                  <div className="hidden lg:block">
-                    <iframe
-                      title="Project Frame"
-                      src={project.link}
-                      className="w-[1030px] h-[550px] bg-[#ffffff]"
-                    />
-                  </div>
-                ) : project.image ? ( // If no link, but image exists
-                  <div className="sm:block lg:hidden">
+                <div className="flex flex-col items-center">
+                  {project.image ? (
                     <Image
                       className="select-none rounded-3xl"
-                      src={project.image}
+                      src={project.image} // Display the project image
                       alt={project.title}
                       width={1030}
                       height={550}
                       layout="responsive"
                     />
-                  </div>
-                ) : (
-                  <div>No media available for this project</div> // Fallback if no image or link
-                )}
-
+                  ) : (
+                    <div>No image available</div> // Placeholder if no image
+                  )}
+                </div>
+                <div className="hidden lg:block">
+                  <iframe
+                    title="Project Frame"
+                    src={project.link}
+                    className="w-[1030px] h-[550px] bg-[#ffffff]"
+                  />
+                </div>
                 <button
                   className="justify-end hover:text-red text-xl md:text-4xl ml-4 md:ml-8"
                   onClick={nextSlide}
@@ -104,7 +100,6 @@ export default function Carousel(): JSX.Element {
                   &rarr;
                 </button>
               </div>
-
               <div className="flex flex-col items-center justify-center w-full">
                 <h2 className="text-xl md:text-3xl underline text-left w-2/3">
                   {project.title}
