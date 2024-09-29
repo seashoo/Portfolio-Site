@@ -33,15 +33,15 @@ export const projectData = [
     link: "",
   },
   {
-    image: "/stellarscholars.svg",
+    image: "",
     title: "Portfolio Website",
     description:
       "This is a short educational game utilizing cloudflare pages and OpenAI's GPT API to educate young minds on the important Concepts of the Galaxy and Gravity.",
     icons: ["reactjs", "pixijs", "javascript", "openai", "css3", "git", "figma"],
     code: "https://github.com/brohudev/stellar-scholar",
     demo: "http://stellarscholars.tech/",
-    presentation: "https://youtu.be/37vrC4Xpajg?si=2DMGUyDueTuIlPty",
-    link: "http://stellarscholars.tech/",
+    presentation: "",
+    link: "https://portfolio-site-seashoos-projects.vercel.app/",
   },
 
   ];
