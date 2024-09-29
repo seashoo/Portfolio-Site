@@ -65,10 +65,10 @@ export default function Carousel(): JSX.Element {
         >
           {index === current && (
             <div className="flex flex-col items-center h-full">
-              <div className="flex items-center w-full">
+              <div className="flex items-center w-full justify-between px-4"> {/* Added justify-between and padding */}
                 {/* Left Arrow Button */}
                 <button
-                  className="hover:text-red text-xl md:text-4xl mx-2" // Smaller margin
+                  className="hover:text-red text-xl md:text-4xl"
                   onClick={prevSlide}
                 >
                   &larr;
@@ -79,8 +79,8 @@ export default function Carousel(): JSX.Element {
                       className="select-none rounded-3xl object-cover"
                       src={project.image}
                       alt={project.title}
-                      width={500}
-                      height={500}
+                      width={500} // Adjust this value as needed
+                      height={500} // Adjust this value as needed
                       layout="intrinsic"
                     />
                   ) : project.link ? (
@@ -97,13 +97,13 @@ export default function Carousel(): JSX.Element {
                 </div>
                 {/* Right Arrow Button */}
                 <button
-                  className="hover:text-red text-xl md:text-4xl mx-2" // Smaller margin
+                  className="hover:text-red text-xl md:text-4xl"
                   onClick={nextSlide}
                 >
                   &rarr;
                 </button>
               </div>
-              <div className="flex flex-col items-center justify-center w-full mt-4"> {/* Added margin-top for spacing */}
+              <div className="flex flex-col items-center justify-center w-full mt-4">
                 <h2 className="text-xl md:text-3xl underline text-left w-2/3">
                   {project.title}
                 </h2>
