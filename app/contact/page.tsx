@@ -19,7 +19,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        `https://getform.io/f/${process.env.NEXT_PUBLIC_GETFORM_URL}`,
+        `https://getform.io/f/agdymzvb`,
         {
           method: "POST",
           body: formData,
